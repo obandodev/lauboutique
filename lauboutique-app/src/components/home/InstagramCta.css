@@ -1,0 +1,33 @@
+.ig-cta {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  text-align: center;
+}
+
+.ig-cta__title {
+  font-size: var(--text-xl);
+  color: var(--color-texto);
+}
+
+.ig-cta__text {
+  margin-top: var(--space-xs);
+  color: var(--color-texto-suave);
+  font-size: var(--text-base);
+}
+
+.ig-cta__button {
+  display: inline-block;
+  margin-top: var(--space-md);
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  color: var(--color-blanco);
+  text-decoration: none;
+  padding: 0.7rem 1.75rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  transition: transform 0.15s ease;
+}
+
+.ig-cta__button:hover {
+  transform: translateY(-2px);
+}

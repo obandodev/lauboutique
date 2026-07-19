@@ -1,0 +1,51 @@
+/*
+  LauBoutique — Design Tokens
+  Paleta B: femenino contemporáneo con punch.
+  Ciruela + coral + mostaza, sobre base crema cálida.
+*/
+
+:root {
+  /* --- Color: base --- */
+  --color-crema: #fff1f1;
+  --color-crema-suave: #fdf8f1;
+
+  /* --- Color: acentos --- */
+  --color-ciruela: #6b2d4f;
+  --color-ciruela-suave: #d8b8c9;
+  --color-coral: #e8724c;
+  --color-coral-oscuro: #c85936;
+  --color-mostaza: #cfd304;
+  --color-mostaza-suave: #f2dba8;
+  --color-azul: #3d6b9e;
+  --color-negro: #000000;
+  --color-amarillo: #fbff03;
+
+  /* --- Color: texto --- */
+  --color-texto: #2e2420;
+  --color-texto-suave: #7a685f;
+  --color-blanco: #ffffff;
+
+  /* --- Tipografía --- */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", "Helvetica Neue", sans-serif;
+
+  /* Escala tipográfica */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+
+  /* --- Espaciado --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+
+  /* --- Bordes --- */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-full: 999px;
+}
