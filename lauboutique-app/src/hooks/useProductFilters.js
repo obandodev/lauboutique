@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { products } from "../data/products";
 
 // Hook que maneja el filtro en cascada: tipo de prenda -> color -> talla.
-// Ahora "color" filtra productos que TENGAN esa variante, no un color único.
+// Ahora "color" filtra productos que TENGAN esa variante
 export function useProductFilters() {
   const [type, setType] = useState(null);
   const [color, setColor] = useState(null);

@@ -12,7 +12,7 @@ function formatPrice(price) {
   });
 }
 
-export default function ProductCard({ product, filterColor }) {
+export default function ProductCard({ product, filterColor, onOpen }) {
   const { name, sizes, price, colors } = product;
 
   const [activeColor, setActiveColor] = useState(filterColor || colors[0].name);
@@ -26,14 +26,14 @@ export default function ProductCard({ product, filterColor }) {
   const whatsappLink = buildWhatsAppLink(product, activeColor);
 
   return (
-    <article className="product-card">
+    <article className="product-card" onClick={onOpen}>
       <Carousel images={activeVariant.photos} alt={`${name} — ${activeVariant.name}`} />
 
       <div className="product-card__info">
         <h3 className="product-card__name">{name}</h3>
         <p className="product-card__price">{formatPrice(price)}</p>
 
-        <div className="product-card__colors">
+        <div className="product-card__colors" onClick={(e) => e.stopPropagation()}>
           {colors.map((c) => (
             <ColorSwatch
               key={c.name}
@@ -46,7 +46,13 @@ export default function ProductCard({ product, filterColor }) {
 
         <p className="product-card__sizes">{sizes.join(" · ")}</p>
 
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="product-card__buy">
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="product-card__buy"
+          onClick={(e) => e.stopPropagation()}
+        >
           Comprar por WhatsApp
         </a>
       </div>

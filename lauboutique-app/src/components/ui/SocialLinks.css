@@ -1,0 +1,29 @@
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.social-links__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  color: var(--color-blanco);
+  transition: transform 0.15s ease;
+}
+
+.social-links__icon:hover {
+  transform: translateY(-3px);
+}
+
+.social-links__icon--whatsapp {
+  background: #25d366;
+}
+
+.social-links__icon--instagram {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}

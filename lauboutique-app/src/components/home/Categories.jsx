@@ -3,8 +3,8 @@ import "./Categories.css";
 
 const CATEGORIES = [
   { title: "Vestidos", type: "vestidos", image: "/placeholders/placeholder-1.jpg" },
-  { title: "Tops", type: "tops", image: "/placeholders/placeholder-7.jpg" },
-  { title: "Blusas", type: "blusas", image: "/placeholders/placeholder-11.jpg" },
+  { title: "Tops", type: "tops", image: "/placeholders/tops-categories.jpg" },
+  { title: "Blusas", type: "blusas", image: "/placeholders/blusas-categories.jpg" },
 ];
 
 export default function Categories() {

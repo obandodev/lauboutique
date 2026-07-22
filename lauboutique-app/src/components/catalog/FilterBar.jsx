@@ -15,7 +15,7 @@ export default function FilterBar({
 }) {
   return (
     <div className="filter-bar">
-      <FilterGroup label="Prenda">
+      <FilterGroup label="">
         {garmentTypes.map((type) => (
           <button
             key={type}

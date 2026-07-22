@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./Carousel.css";
 
-// Carrusel genérico: recibe un array de imágenes y las va mostrando.
-// No sabe si son fotos de un producto, un banner, etc. — solo pasa imágenes.
+
 export default function Carousel({ images, alt }) {
   const [index, setIndex] = useState(0);
 

@@ -1,10 +1,11 @@
-// Arma un link de WhatsApp con mensaje pre-cargado para un producto específico.
-const WHATSAPP_NUMBER = "573103070804"; // sin +, sin espacios, con código de país
+const WHATSAPP_NUMBER = "573103070804"; 
 
-export function buildWhatsAppLink(product, activeColor) {
+export function buildWhatsAppLink(product, activeColor, activeSize) {
+  const sizePart = activeSize ? `, talla ${activeSize}` : "";
+
   const message =
     `Hola! Estoy interesada en comprar el ${product.name}, ` +
-    `color ${activeColor}, precio $${product.price.toLocaleString("es-CO")}. ` +
+    `color ${activeColor}${sizePart}, precio $${product.price.toLocaleString("es-CO")}. ` +
     `¿Me ayudan con la compra?`;
 
   const encodedMessage = encodeURIComponent(message);
